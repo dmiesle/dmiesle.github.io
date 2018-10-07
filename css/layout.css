@@ -40,6 +40,28 @@
   width: 90%;
   box-shadow: 10px -11px 5px 0px rgba(4,8,9,0.75);
 }
+#about img{
+ shape-outside: circle(50%);
+ width: 240px;
+ height: 250px;
+ border: 5px solid #007bb5;
+ shape-image-threshold: .5;
+ shape-margin: 10px;
+ clip-path: circle(46.27% at 51.2% 48.85%);
+ -webkit-clip-path: circle(46.27% at 51.2% 48.85%);
+ float: right;
+ right: 20%;
+ margin-right: 8px;
+
+
+}
+
+.project-info{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 5px;
+  padding: 6px;
+}
 
 .subsections li{
   list-style-type: none;
