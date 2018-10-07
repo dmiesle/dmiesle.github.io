@@ -1,0 +1,28 @@
+a:link {
+    text-decoration: none;
+  color: white;
+}
+
+a:visited {
+    text-decoration: none;
+  color: #DEE6F8;
+}
+
+#header{
+
+}
+
+#header h1{
+  font-family: 'Poiret One', cursive;
+}
+
+#profile {
+  background-color: #58637A;
+  background-image: url("../img/denim_Jacob_Gube_Flickr.jpg");
+  color: white;
+  font-family: 'Niramit', sans-serif;
+}
+
+#subsections{
+    list-style-type: none;
+}

@@ -1,0 +1,24 @@
+
+#profile {
+  margin: 2rem auto;
+  max-width: 90%;
+  width: 90%;
+  box-shadow: 10px -11px 5px 0px rgba(4,8,9,0.75);
+}
+
+#header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#header h1{
+  margin: .5rem;
+  text-shadow: 5px -3px 5px rgba(5,7,8,2.75);
+}
+
+.subsections{
+  display: inline;
+  margin: .5rem;
+  
+}
