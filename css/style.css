@@ -1,14 +1,36 @@
 a:link {
-    text-decoration: none;
+  text-decoration: none;
   color: white;
+  font-style: oblique;
 }
 
 a:visited {
-    text-decoration: none;
+  text-decoration: none;
   color: #DEE6F8;
+  font-style: italic;
+}
+
+.fa {
+  font-size: 15px;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-github {
+  background: #000;
+  color: white;
+}
+#footer{
+   background-color: #58637A;
+   opacity: .8;
+
 }
 
 #header{
+   background-color: #58637A;
+   opacity: .8;
 
 }
 
@@ -16,13 +38,19 @@ a:visited {
   font-family: 'Poiret One', cursive;
 }
 
+h2{
+  font-size: 1.1rem;
+}
+
 #profile {
-  background-color: #58637A;
+ background-color: #58637A; 
   background-image: url("../img/denim_Jacob_Gube_Flickr.jpg");
   color: white;
   font-family: 'Niramit', sans-serif;
 }
 
 #subsections{
-    list-style-type: none;
+  font-size: 18px;
+  font-style: oblique;
+
 }
