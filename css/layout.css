@@ -1,3 +1,18 @@
+
+#about img{
+ shape-outside: circle(50%);
+ width: 240px;
+ height: 250px;
+ border: 5px solid #007bb5;
+ shape-image-threshold: .5;
+ shape-margin: 10px;
+ clip-path: circle(46.27% at 51.2% 48.85%);
+ -webkit-clip-path: circle(46.27% at 51.2% 48.85%);
+ float: right;
+ right: 20%;
+ margin-right: 8px;s
+}
+
 .fa {
   width: 15px;
   height: 15px;
@@ -8,12 +23,55 @@
 }
 
 #footer{
+  grid-area: footer;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-left: 2rem;
 }
 
+.grid-container{
+    display: grid;
+    grid-template-areas:
+    'skills about about about'
+    'skills biography biography biography'
+    'skills projects projects projects'
+    'skills contact contact contact'
+    'footer footer footer footer';
+    padding-left: : 2rem;
+}
+
+.grid-item-1{
+    grid-area: skills;
+    margin-left: 2rem;
+
+}
+
+.grid-item-2 {
+    grid-area: about;
+    margin-left: 2rem;
+}
+
+.grid-item-3{
+    grid-area: biography;
+    margin-left: 2rem;
+}
+
+.grid-item-4{
+  display: grid;
+  margin-left: 2rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 2rem;
+}
+
+.grid-item-5{
+    grid-area: contact
+    margin-left: 2rem;
+}
+
+
 #header{
+  grid-area: header;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -22,6 +80,9 @@
 #header h1{
   margin: .5rem;
   text-shadow: 5px -3px 5px rgba(5,7,8,2.75);
+}
+h2{
+  text-align: center;
 }
 
 #nav {
@@ -40,27 +101,12 @@
   width: 90%;
   box-shadow: 10px -11px 5px 0px rgba(4,8,9,0.75);
 }
-#about img{
- shape-outside: circle(50%);
- width: 240px;
- height: 250px;
- border: 5px solid #007bb5;
- shape-image-threshold: .5;
- shape-margin: 10px;
- clip-path: circle(46.27% at 51.2% 48.85%);
- -webkit-clip-path: circle(46.27% at 51.2% 48.85%);
- float: right;
- right: 20%;
- margin-right: 8px;
-
-
+#projects{
+    grid-area: projects;
 }
 
-.project-info{
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-gap: 5px;
-  padding: 6px;
+#projects img{
+  max-width: 90%;
 }
 
 .subsections li{
