@@ -51,3 +51,19 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 };
+
+var contactmodal = document.getElementById('contactModal');
+var btn2 = document.getElementById("modalContactButton");
+var span2 = document.getElementsByClassName("close2")[0];
+btn2.onclick = function() {
+   contactmodal.style.display = "block";
+}
+span2.onclick = function() {
+   contactmodal.style.display = "none";
+}
+
+window.onclick = function(event) {
+   if (event.target == modal) {
+       contactmodal.style.display = "none";
+   }
+};

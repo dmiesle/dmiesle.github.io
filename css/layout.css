@@ -115,6 +115,40 @@ h2{
   width: 80%;
 }
 
+.modal-contact {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(255, 255, 255); 
+  background-color: rgba(214, 212, 231, 0.4);
+}
+
+.modal-contactcontent {
+  margin: auto;
+  padding: 20px;
+  border: 1px solid rgb(60, 26, 151);
+  width: 80%;
+}
+
+.close2 {
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close2:hover,
+.close2:focus {
+
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .close {
   float: right;
   font-size: 28px;

@@ -63,6 +63,15 @@ h2{
   color: black;
 }
 
+#modalContactButton{
+  color: white;
+
+}
+.modal-contactcontent {
+  background-color: #fefefe;
+  color: black;
+}
+
  .close {
     color: #000000;
  }
