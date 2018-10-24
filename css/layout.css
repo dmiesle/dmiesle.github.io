@@ -13,6 +13,10 @@
  margin-right: 8px;
 }
 
+.btn{
+  padding: 1rem 1rem;
+}
+
 .fa {
   width: 15px;
   height: 15px;
@@ -64,11 +68,11 @@
   padding: 3rem;
 }
 
-.grid-item-5{
-    grid-area: contact
+.grid-item-5 {
+    grid-area: contact;
     margin-left: 2rem;
-}
 
+}
 
 #header{
   grid-area: header;
