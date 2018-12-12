@@ -9,17 +9,20 @@
 <link rel="stylesheet" type="text/css" href="./css/style.css">
 <link rel="stylesheet" type="text/css" href="./css/layout.css">
 <main id="profile">
+
 <header id="header">
 	<title>Don Miesle's Profile</title>
   	<h1>Don Miesle</h1>
   <nav id="subsections">
 		<li class= "subsections btn-primary hvr-float"><a href="#about">About</a></li>
-		<li class= "subsections btn-primary hvr-float"><a href="#biography">Biography</a></li>
+		<li class= "subsections btn-primary hvr-float"><button id="modalButton" class="btn">Biography</li>
 		<li class= "subsections btn-primary hvr-float"><a href="#projects">Projects</a></li>
 		<li class= "subsections btn-primary hvr-float"><a href="#skills">Skills</a></li>
-    </li>
+		<li class= "subsections btn-primary hvr-float"><button id="modalContactButton" class="btn">Contact</li>
 </nav>
+<button id="hide-navigation" class="btn" type="submit" onclick="hidenav()">Hide</button>
 </header>
+
 <div class="grid-container">
 <body>
 
@@ -44,16 +47,18 @@
 	<li>Public Speaking</li>
 	<li>Process Improvement</li>
 	<li>Top Secret Security Clearance</li>
-
 	</section>
 
 	<section id="about" class="grid-item grid-item-2">
 		<h2>About</h2>
-			<img src="./img/donmiesle.jpg" alt="Image of Don Miesle"></img>
+			<img src="./img/donmiesle.jpg" alt="Image of Don Miesle">
 		<p>I take problems from identification to solution, by improving existing software or developing new software, creating processes and procedures, and making the tools or process as efficient as possible. From infrastructure to development, I provide results that exceed expectations.</p>
-		<p> I have expert level proficiency in EnCase, FTK, Packet Capture, Log analysis, MacOS X, iOS, Forensic Techniques, database administration, database development, scripting, and encryption. I continue to expand my knowledge base by learning full stack software development.</p>
+		<p>I have expert level proficiency in EnCase, FTK, Packet Capture, Log analysis, MacOS X, iOS, Forensic Techniques, database administration, database development, scripting, and encryption. I continue to expand my knowledge base by learning full stack software development.</p>
 	</section>
 
+<div id="myModal" class="modal">
+	<div class="modal-content">
+	<span class="close">&times;</span>
 	<section id="biography" class="grid-item grid-item-3">
 		<h2>Biography</h2>
 
@@ -63,38 +68,51 @@
 
 		<p>While at Apple, I've held two different titles but have been the primarily responsible person for managing and developing solutions to ever changing technology picture. Some of the highlights of projects I've been responsible for include data collections, knowldege management, eDiscovery productions, source code review deployment, evidence room management, mobile device collections, criminal court testimony, data warehouse deployments, and translation between engineers, lawyers, and law enforcement agents. Through this work I wanted to build better than what were commercially available. The best way to do that was to learn how to write my own software.</p>
 
-		<p>Right now, I'm working full time and attending to WeCan{Code}IT flex bootcamp, where with independent work and every other weekend code jams I'm learning Java, Spring MVC, ahd full stack software development. Could you use someone with this background to solve your problems? Hit me up <a href="#contact">here</a> and we can start our conversation.</p>
+		<p>Right now, I'm working full time and attending to WeCan{Code}IT flex bootcamp, where with independent work and every other weekend code jams I'm learning Java, Spring MVC, ahd full stack software development. Could you use someone with this background to solve your problems? Hit me up and we can start our conversation.</p>
 	</section>
+	</div>
+</div>
+
 	<section id="projects">
 		<h2>Projects</h2>
+		<button class="project-slides" onclick="window.open('slideshow.html');"><span class="icon">Open Project Slide show</span></button>
 			<section class="grid-item grid-item-4">
-				<article id="project-1"><h3>Professional portfolio</h3>
-				<p>You are looking at it. I've developed this site to provide a landing place for people like you, to see a brief synopsis of <a href="#about">who I am</a>,  <a href="#projects">what I've done</a>, and <a href="#contact">how to contact me</a>. I've used HTML5 and CSS (including Grid, and objects). Future development will probably include use of Java, Java Scripting, JPA, and something special sprinkled in.</p>
-				<p>Technology utilized: Java (Arrays and Collections), TDD, Eclipse IDE.</p>
+				<article id="project-1" onclick="html"><h3>Professional portfolio</h3>
 				<p>*Note there isn't a screen shot of this project because it would probably tear a hole in the space/time continuum to have a image of itself on itself.</p>
+				<button id="hide-details" type="sibmit" onclick="hideproject()" class="btn">Description</button>
+				<div id="project-1d">
+				<p>You are looking at it. I've developed this site to provide a landing place for people like you, to see a brief synopsis of <a href="#about">who I am</a>,  <a href="#projects">what I've done</a>, and <a href="#contact">how to contact me</a>. I've used HTML5 and CSS (including Grid, and objects). Future development will probably include use of Java, Java Scripting, JPA, and something special sprinkled in.</p>
+				<p>Technology utilized: Java (Arrays and Collections), TDD, Eclipse IDE.</p></div>
 				</article>
 
-
 				<article id="project-2"><h3><a href="https://github.com/dmiesle/virtual-pets-amok">Virtual Pets Amok</a></h3>
+				<img src="./img/Virtual_Pets_Amok.jpg" alt="Screen Shot of the Virtual Pets Amok console interaction">
+				<button id="hide-details" type="sibmit" onclick="hideproject2()" class="btn">Description</button>
+				<div id="project-2d">
 				<p>Create a console based game to allow user to create and maintain a virtual pet shelter where the user had to care for the pets to keep them alive. This project expanded my knowledge base to include Arrays, Collections, and refine object oreinted coding. I particularly enjoyed taking 20 lines of code from a previous project and reducing it to 3 lines.</p>
-				<p>Technology utilized: Java (Arrays and Collections), TDD, Eclipse IDE.</p>
-				<img src="./img/Virtual_Pets_Amok.jpg" alt="Screen Shot of the Virtual Pets Amok console interaction"></img>
+				<p>Technology utilized: Java (Arrays and Collections), TDD, Eclipse IDE.</p></div>
 				</article>
 
 				<article id="project-3"><h3><a href="https://github.com/dmiesle/fortune-teller">Fortune Teller</a></h3>
+				<img src="./img/FortuneTeller.png" alt="Screen Shot of the Fortune Teller console interaction">
+				<button id="hide-details" type="sibmit" onclick="hideproject3()" class="btn">Description</button>
+				<div id="project-3d">
 				<p>This was my first forray into creating an interactive console based Java application. Some of the core functionalities are that the user is permitted to enter pretty much any information in response to any of the questions. The largest problem I had to solve from my perspective was creating a way to normalize whatever the user entereed for their birth mont (ie March or 3). Discovering and resolving the functionality of java.time.Month accessor got me over that hurdle.</p>
-				<p> Technology utilized: Java, Eclipse IDE</p>
-				<img src="./img/FortuneTeller.png" alt="Screen Shot of the Fortune Teller console interaction"></img>
+				<p>Technology utilized: Java, Eclipse IDE</p></div>
 				</article>
-			</section class="grid-item grid-item-4">
-
+			</section>
 	</section>
 
+<div id="contactModal" class="modal">
+		<div class="modal-contactcontent">
+		<span class="close2">&times;</span>
 	<section class="contact" class="grid-item grid-item-5">
 		<h2>Contact</h2>
-		<p> My contact information is not going to sit on a webpage that some ecil spawn crawler engine can get to and start spamming my communication channels with malware and other such non-sense which just adds to the load on the internet.</p>
+		<p> My contact information is not going to sit on a webpage that some evil spawn crawler engine can get to and start spamming my communication channels with malware and other such non-sense which just adds to the load on the internet.</p>
 		<p>Feel free to connect with me via <a href="https://www.linkedin.com/in/donmiesle/">LinkedIn</a></p>
 	</section>
+</div>
+</div>
 
 </body>
 <footer id="footer">
@@ -105,7 +123,8 @@
     </div>
 </footer>
 
-</div class="grid-container">
+<script src="./js/app.js"></script>
+</div>
 </main>
 </html>
 

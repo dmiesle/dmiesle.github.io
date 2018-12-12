@@ -10,6 +10,15 @@ a:visited {
   font-style: italic;
 }
 
+.btn{
+  border: none;
+  background-color: inherit;
+  font-size: 18px;
+  font-style: oblique;
+  display: inline-block;
+  : outline:0;
+}
+
 .fa {
   font-size: 15px;
 }
@@ -25,12 +34,14 @@ a:visited {
 #footer{
    background-color: #58637A;
    opacity: .8;
+   background-image: url("../img/denim_Jacob_Gube_Flickr.jpg");
 
 }
 
 #header{
    background-color: #58637A;
    opacity: .8;
+   background-image: url("../img/denim_Jacob_Gube_Flickr.jpg");
 
 }
 
@@ -43,11 +54,48 @@ h2{
   font-size: 1.1rem;
 }
 
+#modalButton{
+  color: white;
+
+}
+.modal-content {
+  background-color: #fefefe;
+  color: black;
+}
+
+#modalContactButton{
+  color: white;
+
+}
+.modal-contactcontent {
+  background-color: #fefefe;
+  color: black;
+}
+
+ .close {
+    color: #000000;
+ }
+
+.close:hover,
+.close:focus {
+  color: rgb(255, 255, 255);
+}
+
 #profile {
  background-color: #58637A; 
-  background-image: url("../img/denim_Jacob_Gube_Flickr.jpg");
   color: white;
   font-family: 'Niramit', sans-serif;
+}
+
+.project-slides{
+  border: none;
+  background-color: inherit;
+  font-size: 18px;
+  font-style: oblique;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 #subsections{
